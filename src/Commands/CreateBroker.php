@@ -1,6 +1,6 @@
 <?php
 
-namespace Zefy\LaravelSSO\Commands;
+namespace Insideofcode\LaravelSSO\Commands;
 
 use Illuminate\Console\Command;
 
@@ -41,7 +41,7 @@ class CreateBroker extends Command
         $broker = new $brokerClass;
 
         $broker->name = $this->argument('name');
-        $broker->secret = str_random(40);
+        $broker->secret = str()->random(40);
 
         $broker->save();
 

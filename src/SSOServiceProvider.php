@@ -1,9 +1,9 @@
 <?php
 
-namespace Zefy\LaravelSSO;
+namespace Insideofcode\LaravelSSO;
 
 use Illuminate\Support\ServiceProvider;
-use Zefy\LaravelSSO\Commands;
+use Insideofcode\LaravelSSO\Commands;
 
 class SSOServiceProvider extends ServiceProvider
 {
